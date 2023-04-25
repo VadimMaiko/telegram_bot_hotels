@@ -33,7 +33,7 @@ class FSMUser(StatesGroup):
 async def cm_start(message: types.Message):
     await bot.send_message(
         message.from_user.id,
-        f'Приветствую Вас {message.from_user.first_name} я бот помощник\n '
+        f'Приветствую Вас {message.from_user.first_name} я ваш бот помощник\n '
         'Я помогу вам с поиском отеля!',
         reply_markup=kb_command
     )
